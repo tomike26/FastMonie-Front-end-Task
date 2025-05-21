@@ -32,8 +32,8 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <section className="bg-[#3b3b3b] text-white md:px-10 md:px-24 pt-32 pb-28">
-        <div className="lg:max-w-7xl mx-auto text-center">
+      <section className="bg-[#3b3b3b] text-white md:px-10 px-24 pt-32 pb-28">
+       <div className="lg:max-w-7xl mx-auto text-center lg:text-left">
           <p className="text-xs uppercase tracking-widest text-white/60 mb-4">
             WELCOME TO CODESHAPER
           </p>
