@@ -1,10 +1,10 @@
-import ExperienceSection from '@/components/ExperienceSection';
-import Navbar from '@/components/Navbar';
+import ExperienceSection from "../components/ExperienceSection"
+import Navbar from '../components/Navbar';
 import Image from 'next/image';
 import QASection from '@/components/Faq';
-import TestimonialSection from '@/components/TestimonialSection';
-import BusinessGrowthSection from '@/components/BusinessGrowthSection';
-import Footer from '@/components/footer';
+import TestimonialSection from '../components/TestimonialSection';
+import BusinessGrowthSection from '../components/BusinessGrowthSection';
+import Footer from '../components/footer';
 
 
 
