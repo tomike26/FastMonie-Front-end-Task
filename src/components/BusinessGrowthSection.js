@@ -19,7 +19,7 @@ export default function BusinessGrowthSection() {
               <div className="bg-black p-4 rounded">
                 <img src="/images/brainstorming.png" alt="Consulting Icon" className="h-10 w-10" />
               </div>
-              <div className="text-[40px] font-bold leading-none mt-4 mb-6">420</div>
+              <div className="lg:text-[40px] font-bold leading-none mt-4 mb-6">420</div>
               <p className="mt-2 text-[14px] tracking-wide uppercase">Consulting Solutions</p>
             </div>
           ))}
@@ -32,7 +32,7 @@ export default function BusinessGrowthSection() {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`md:py-14 py-12 transition-all ${
+              className={`md:py-14 py-4 transition-all ${
                 activeTab === tab.id
                   ? "bg-white text-blue-600 border-b-4 border-blue-600 shadow-md"
                   : "bg-[#f9f9f9] text-black border-b-4 border-transparent"

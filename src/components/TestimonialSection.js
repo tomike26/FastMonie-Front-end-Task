@@ -42,7 +42,7 @@ export default function TestimonialSection() {
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Left side - Title */}
           <div className="lg:w-1/3">
-            <h2 className="text-5xl font-bold text-black">
+            <h2 className="lg:text-5xl   text-3xl  font-bold text-black">
               WHAT THEY<br />
               ARE TALKING<br />
               ABOUT?

@@ -107,7 +107,7 @@ const Home = () => {
         <section className="w-full  py-16">
           <div className="max-w-6xl mx-auto px-4">
             <div className="flex flex-col md:flex-row justify-between items-stretch">
-              <div className="bg-white shadow-lg p-22 md:w-1/2 w-full">
+              <div className="bg-white shadow-lg p-12 lg:p-22 md:w-1/2 w-full">
                 <div className="flex items-start gap-4">
                   <span className="text-[#2463EB] text-xl font-bold bg-[#E8EEFB] px-4 py-4 rounded-md">
                     01
@@ -123,7 +123,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="bg-white shadow-lg p-22 md:w-1/2 w-full">
+              <div className="bg-white shadow-lg  p-12 lg:p-22 md:w-1/2 w-full">
                 <div className="flex items-start gap-4">
                   <span className="text-[#2463EB] text-xl font-bold bg-[#E8EEFB] px-4 py-4 rounded-md">
                     02
