@@ -41,31 +41,41 @@ export default function TestimonialSection() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Left side - Title */}
-          <div className="lg:w-1/3">
-            <h2 className="lg:text-5xl   text-3xl  font-bold text-black">
-              WHAT THEY<br />
-              ARE TALKING<br />
-              ABOUT?
-            </h2>
-            <p className="text-gray-600 mt-4 text-sm">
-              Trusted by more than 4,200 customers
-            </p>
+        <div className="lg:w-1/3">
+  <h2 className="text-3xl lg:text-5xl font-bold text-black leading-tight">
+    {/* Small screens: stacked */}
+    <span className="block lg:hidden">
+      WHAT THEY ARE TALKING<br />ABOUT?
+    </span>
 
-            <div className="flex items-center gap-2 mt-8">
-              <button
-                onClick={prevSlide}
-                className="w-10 h-10 border border-gray-300 rounded flex items-center justify-center hover:bg-gray-100 transition-colors"
-              >
-                <ChevronLeft size={20} />
-              </button>
-              <button
-                onClick={nextSlide}
-                className="w-10 h-10 border border-gray-300 rounded flex items-center justify-center hover:bg-gray-100 transition-colors"
-              >
-                <ChevronRight size={20} />
-              </button>
-            </div>
-          </div>
+    {/* Large screens: multi-line layout */}
+    <span className="hidden lg:block">
+      WHAT THEY<br />
+      ARE TALKING<br />
+      ABOUT?
+    </span>
+  </h2>
+
+  <p className="text-gray-600 mt-4 text-sm">
+    Trusted by more than 4,200 customers
+  </p>
+
+  <div className="flex items-center gap-2 mt-8">
+    <button
+      onClick={prevSlide}
+      className="w-10 h-10 border border-gray-300 rounded flex items-center justify-center hover:bg-gray-100 transition-colors"
+    >
+      <ChevronLeft size={20} />
+    </button>
+    <button
+      onClick={nextSlide}
+      className="w-10 h-10 border border-gray-300 rounded flex items-center justify-center hover:bg-gray-100 transition-colors"
+    >
+      <ChevronRight size={20} />
+    </button>
+  </div>
+</div>
+
           <div className="lg:w-2/3">
             <div className="flex flex-col md:flex-row gap-6">
               {testimonials.slice(activeSlide, activeSlide + 2).map((testimonial) => (

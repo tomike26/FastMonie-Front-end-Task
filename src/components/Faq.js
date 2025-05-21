@@ -61,7 +61,7 @@ export default function QASection() {
                                 >
                                     <div className="flex items-center gap-8">
                                         <span className="text-blue-600 font-medium">{item.id}.</span>
-                                        <h3 className="font-medium text-sm">{item.question}</h3>
+                                        <h3 className="font-bold text-sm">{item.question}</h3>
                                     </div>
                                     <Plus
                                         size={20}
@@ -77,7 +77,7 @@ export default function QASection() {
                         ))}
                     </div>
 
-                    <div className="hidden lg:block lg:w-5/12 mt-40">
+                    <div className="hidden lg:block lg:w-5/12 mt-44">
                         <div className="flex flex-col lg:flex-row gap-12">
                             <div className="lg:w-8/12 space-y-3">
                                 {checklistItems.map((item, index) => (
