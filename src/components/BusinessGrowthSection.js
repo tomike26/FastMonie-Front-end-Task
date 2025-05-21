@@ -19,20 +19,20 @@ export default function BusinessGrowthSection() {
               <div className="bg-black p-4 rounded">
                 <img src="/images/brainstorming.png" alt="Consulting Icon" className="h-10 w-10" />
               </div>
-              <div className="lg:text-[40px] font-bold leading-none mt-4 mb-6">420</div>
-              <p className="mt-2 text-[14px] tracking-wide uppercase">Consulting Solutions</p>
+              <div className="lg:text-[40px] font-bold leading-none mt-4 lg:mb-6">420</div>
+              <p className="lg:mt-2 text-[12px] lg:text-[14px] tracking-wide uppercase">Consulting Solutions</p>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="absolute left-1/2 -translate-x-1/2 md:top-80 top-120 w-full z-10 px-6">
+      <div className="absolute left-1/2 -translate-x-1/2 md:top-80 top-100 w-full z-10 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-3 text-center text-sm font-bold shadow-lg overflow-hidden rounded">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`md:py-14 py-4 transition-all ${
+              className={`md:py-10 py-8 transition-all ${
                 activeTab === tab.id
                   ? "bg-white text-blue-600 border-b-4 border-blue-600 shadow-md"
                   : "bg-[#f9f9f9] text-black border-b-4 border-transparent"
@@ -48,7 +48,7 @@ export default function BusinessGrowthSection() {
     <div className="space-y-6 lg:pl-6 border-r-3 border-gray-200 ">
       <div className="flex items-start gap-4">
         <div className="bg-[#e8f1fd] p-3 rounded-full flex items-center justify-center">
-          <img src="/images/check-icon.png" alt="check icon" className="h-6 w-6 text-blue-600" />
+          <img src="/svg/check-circle.svg" alt="check icon" className="h-6 w-6 text-blue-600" />
         </div>
         <div>
           <h4 className="font-bold text-base mb-1 ">HIGHEST SUCCESS RATES</h4>
@@ -60,7 +60,7 @@ export default function BusinessGrowthSection() {
 
       <div className="flex items-start gap-4">
         <div className="bg-[#e8f1fd] p-3 rounded-full flex items-center justify-center">
-          <img src="/images/check-icon.png" alt="check icon" className="h-6 w-6 text-blue-600" />
+          <img src="/svg/check-circle.svg" alt="check icon" className="h-6 w-6 text-blue-600" />
         </div>
         <div>
           <h4 className="font-bold text-base mb-1">WE BUILD EXPERIENCE</h4>

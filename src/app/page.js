@@ -32,26 +32,28 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <section className="bg-[#3b3b3b] text-white md:px-10 px-24 pt-32 pb-28">
-       <div className="lg:max-w-7xl mx-auto text-center lg:text-left">
-          <p className="text-xs uppercase tracking-widest text-white/60 mb-4">
+      <section className="bg-[#3b3b3b] text-white px-6 sm:px-10 md:px-16 lg:px-24 pt-24 md:pt-32 pb-20 md:pb-28">
+        <div className="max-w-7xl mx-auto text-center lg:text-left">
+          <p className="text-xs sm:text-sm uppercase tracking-widest text-white/60 mb-6 sm:mb-8">
             WELCOME TO CODESHAPER
           </p>
-          <h1 className="text-3xl md:text-6xl font-extrabold leading-tight mb-8">
-            CONSULTING<br />FOR EVERY<br />BUSINESS
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 sm:mb-8">
+            <span className="block lg:hidden">CONSULTING FOR EVERY<br />BUSINESS</span>
+            <span className="hidden lg:inline">
+              CONSULTING<br />FOR EVERY<br />BUSINESS
+            </span>
           </h1>
-          <button className="bg-[#3E6FF4] hover:bg-blue-700 text-white text-sm font-medium px-6 py-4 tracking-wider uppercase rounded-sm">
+          <button className="bg-[#3E6FF4] hover:bg-blue-700 text-white text-xs sm:text-sm font-medium px-5 sm:px-6 py-3 sm:py-4 tracking-wider uppercase">
             Discover More
           </button>
         </div>
-
       </section>
       <ExperienceSection
         heading="REAL-WORLD EXPERIENCE"
         subheading="The best business consulting firm you can count on!"
         items={items}
       />
-      <section className="bg-white text-gray-900 py-20 px-6 mt-10">
+      <section className="bg-white text-gray-900 py-20 px-6 md:mt-10">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
           <div className="flex justify-center md:justify-start">
             <div className="w-24 h-24 bg-blue-600 flex items-center justify-center">
@@ -113,7 +115,7 @@ const Home = () => {
                     01
                   </span>
                   <div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">
+                    <h3 className="md:text-lg font-bold text-gray-900 mb-2">
                       GET PROFESSIONAL ADVICE
                     </h3>
                     <p className="text-gray-600 text-sm mt-2">
@@ -150,7 +152,7 @@ const Home = () => {
           {[1, 2, 3].map((_, idx) => (
             <div
               key={idx}
-              className="bg-[#808080] shadow-md p-16 flex flex-col  h-[450px] justify-center"
+              className="bg-[#808080] shadow-md p-16 flex flex-col  lg:h-[450px] justify-center"
             >
               <div className="mb-4 mt-40">
                 <Image
@@ -171,12 +173,28 @@ const Home = () => {
           ))}
         </div>
       </section>
-      <section className="bg-[#0F0D1D] text-white py-20 text-center md:px-40">
-        <h2 className="lg:text-5xl md:text-4xl font-bold uppercase mb-2">MISSION IS TO PROTECT</h2>
-        <h2 className=" lg:text-5xl md:text-4xl font-bold uppercase mb-2">YOUR BUSINESSES &</h2>
-        <h2 className="lg:text-5xl md:text-4xl font-bold uppercase mb-6">MUCH MORE</h2>
-        <button className="bg-blue-600 px-6 py-4  text-sm">DISCOVER MORE</button>
-      </section>
+ <section className="bg-[#0F0D1D] text-white py-20 px-4 text-center md:px-20 lg:px-40">
+  {/* Line 1 & 2 combined for small screen, split on md+ */}
+  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold uppercase mb-2">
+    <span className="block md:hidden">
+      MISSION IS TO PROTECT YOUR BUSINESSES &
+    </span>
+    <span className="hidden md:block">MISSION IS TO PROTECT</span>
+    <span className="hidden md:block">YOUR BUSINESSES &</span>
+  </div>
+
+  {/* Line 3 - always on its own line */}
+  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold uppercase mb-6">
+    MUCH MORE
+  </h2>
+
+  <button className="bg-blue-600 hover:bg-blue-700 px-6 py-4 text-sm uppercase tracking-wide">
+    Discover More
+  </button>
+</section>
+
+
+
       <QASection />
       <TestimonialSection />
       <BusinessGrowthSection />

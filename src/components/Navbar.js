@@ -13,7 +13,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="w-full bg-[#2c2c2c] text-white font-sans">
+    <div className="bg-[#2c2c2c] text-white font-sans">
       <nav className="max-w-[1920px] mx-auto flex items-center h-[100px] text-sm border-b border-white/30 px-4">
         <div className="h-full flex items-center pr-6 border-r border-white/60">
           <span className="text-[18px] font-semibold tracking-wide ml-4 md:ml-12">
